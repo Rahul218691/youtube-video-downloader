@@ -3,7 +3,7 @@ const submitBtn = document.getElementById('convertBtn');
 const InfoContainer = document.getElementById('videoInfo');
 const Spinner = document.getElementById('spinner');
 const downloadBTN = document.getElementById('downloadBtn');
-const BASEURL = 'http://localhost:3000';
+const BASEURL = window.location.href;
 
 submitBtn.addEventListener('click', ()=>{
 	if(url.value == '') return;
