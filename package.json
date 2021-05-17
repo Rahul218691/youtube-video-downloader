@@ -1,0 +1,16 @@
+{
+  "name": "youtubevideodownloader",
+  "version": "1.0.0",
+  "description": "youtube video downloader",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rahul",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "serve-favicon": "^2.5.0",
+    "ytdl-core": "^4.8.0"
+  }
+}
