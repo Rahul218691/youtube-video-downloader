@@ -12,7 +12,7 @@ submitBtn.addEventListener('click', ()=>{
 	InfoContainer.innerHTML = "";
 	$.ajax({
 		type:'GET',
-		url:`${BASEURL}/videoInfo?url=${url.value.trim()}`,
+		url:`${BASEURL}videoInfo?url=${url.value.trim()}`,
 		success:function(res){
 			 // console.log(res)
 			var appendData = `
@@ -36,5 +36,5 @@ submitBtn.addEventListener('click', ()=>{
 downloadBtn.addEventListener('click', ()=>{
 	const videoURL = url.value.trim();
 	if(!videoURL) return;
-	window.location.assign(`${BASEURL}/download?videoURL=${videoURL}`);
+	window.location.assign(`${BASEURL}download?videoURL=${videoURL}`);
 })
